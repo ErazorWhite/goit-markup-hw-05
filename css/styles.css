@@ -212,13 +212,13 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.nav-pages .link::before {
+.nav-pages .link::after {
   position: absolute;
   content: "";
 
   width: 100%;
   height: 4px;
-  bottom: 0;
+  bottom: -1px;
   color: var(--focus);
 
   border-radius: 2px;
@@ -234,16 +234,16 @@ img {
   color: var(--focus);
 }
 
-.nav-pages .link:hover::before,
-.nav-pages .link:focus::before {
+/* .nav-pages .link:hover::after,
+.nav-pages .link:focus::after {
   opacity: 1;
-}
+} */
 
 .nav-pages .current {
   color: var(--focus);
 }
 
-.nav-pages .current::before {
+.nav-pages .current::after {
   opacity: 1;
 }
 
