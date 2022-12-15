@@ -143,7 +143,6 @@ img {
 .button.primary:hover,
 .button.primary:focus {
   background-color: var(--hero-focus);
-  color: var(--primary-light);
 }
 
 .button.secondary {
@@ -731,6 +730,7 @@ img {
 .footer-socials .social-link {
   background-color: var(--secondary--icons-bg);
   color: var(--primary-light);
+  transition: background-color 250ms var(--cubic);
 }
 
 .footer-socials .social-link:hover,
