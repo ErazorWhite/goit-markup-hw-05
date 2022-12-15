@@ -97,6 +97,8 @@ img {
 .link {
   text-decoration: none;
   color: inherit;
+
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 
 .list {
@@ -131,6 +133,8 @@ img {
 
   background-color: var(--primary-light);
   color: var(--primary-dark);
+
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 
 .button.primary {
@@ -443,8 +447,6 @@ img {
 
 .social-link:hover,
 .social-link:focus {
-  border-radius: 50%;
-
   background-color: var(--focus);
   color: var(--primary-light);
 }
@@ -455,6 +457,8 @@ img {
   justify-content: center;
   width: 44px;
   height: 44px;
+
+  border-radius: 50%;
 
   color: var(--primary-icons-bg);
 }
@@ -683,11 +687,6 @@ img {
   margin-bottom: 0;
 }
 
-.footer-address .link:hover,
-.footer-address .link:focus {
-  color: var(--focus);
-}
-
 .footer .email,
 .footer .phone {
   color: var(--tretiary-dark);
@@ -700,6 +699,11 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-address .link:hover,
+.footer-address .link:focus {
+  color: var(--focus);
 }
 
 .footer-socials {
