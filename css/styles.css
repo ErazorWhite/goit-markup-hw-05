@@ -97,8 +97,6 @@ img {
 .link {
   text-decoration: none;
   color: inherit;
-
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 
 .list {
@@ -133,8 +131,6 @@ img {
 
   background-color: var(--primary-light);
   color: var(--primary-dark);
-
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 
 .button.primary {
@@ -151,10 +147,10 @@ img {
 }
 
 .button.secondary {
+  padding: 6px 22px;
+
   background-color: var(--secondary-light);
   color: var(--primary-dark);
-
-  padding: 6px 22px;
 }
 
 .button.secondary:hover,
@@ -217,6 +213,8 @@ img {
 
   padding-top: 32px;
   padding-bottom: 32px;
+
+  transition: color 250ms var(--cubic);
 }
 .nav-pages .link::after {
   position: absolute;
@@ -299,6 +297,7 @@ img {
   padding: 10px 24px;
   min-width: 200px;
   min-height: 50px;
+  transition: background-color 250ms var(--cubic);
 }
 
 .hero-title {
@@ -445,12 +444,6 @@ img {
   gap: 10px;
 }
 
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--focus);
-  color: var(--primary-light);
-}
-
 .social-link {
   display: flex;
   align-items: center;
@@ -461,6 +454,13 @@ img {
   border-radius: 50%;
 
   color: var(--primary-icons-bg);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--focus);
+  color: var(--primary-light);
 }
 
 /* Our Customers */
@@ -481,6 +481,7 @@ img {
   border: 1px solid var(--primary-icons-bg);
   border-radius: 4px;
   color: var(--primary-icons-bg);
+  transition: border-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .customer-link:hover,
@@ -508,6 +509,8 @@ img {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
 }
 
 .projects.list {
@@ -522,6 +525,7 @@ img {
 
 .project-link {
   display: block;
+  transition: box-shadow 250ms var(--cubic);
 }
 
 .project-link:hover,
@@ -568,7 +572,7 @@ img {
 
 .project-link:hover .project-overlay,
 .project-link:focus .project-overlay {
-   transform: translateY(0);
+  transform: translateY(0);
 }
 
 .project-box {
@@ -608,7 +612,7 @@ img {
 
   opacity: 1;
   visibility: visible;
-  
+
   transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
 }
 
@@ -619,7 +623,7 @@ img {
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);  
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 .modal {
@@ -629,13 +633,13 @@ img {
   left: 50%;
   min-height: 581px;
   min-width: 528px;
-  
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  
+
   background-color: var(--primary-light);
-  
+
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--cubic);
 }
@@ -699,6 +703,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  transition: color 250ms var(--cubic);
 }
 
 .footer-address .link:hover,
@@ -724,14 +729,11 @@ img {
 }
 
 .footer-socials .social-link {
-  border-radius: 50%;
   background-color: var(--secondary--icons-bg);
   color: var(--primary-light);
 }
 
 .footer-socials .social-link:hover,
 .footer-socials .social-link:focus {
-  border-radius: 50%;
   background-color: var(--focus);
-  color: var(--primary-light);
 }
